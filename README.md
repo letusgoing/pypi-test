@@ -9,3 +9,10 @@ python setup.py sdist
 
 # upload to test.pypi.org
 python3 -m twine upload --repository testpypi dist/*
+
+# install your packake from test.pypi.org
+pip install --upgrade -i https://test.pypi.org/simple/ pypi-test-harvey
+
+# import test
+import pypiTest
+pypiTest.test1()
